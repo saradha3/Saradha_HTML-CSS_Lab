@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.header{
+    background-color: brown;
+    width: 100%;
+    margin: auto;
+    border: 2px solid black;
+}
+.header p{
+    text-align: center;
+    font-size: 25px;
+}
+
+nav{
+    background-color: gray;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    overflow: hidden;
+    
+}
+
+.link{
+    margin: 8px;
+}
+
+.link a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.dropdown-content1,.dropdown-content2{
+    display: none;
+    
+}
+
+.dropdown1:hover .dropdown-content1, .dropdown2:hover .dropdown-content2{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.dropdown-content1 a, .dropdown-content2 a{
+    margin-top: 10px;
+    color: rgb(54, 24, 24);
+}
