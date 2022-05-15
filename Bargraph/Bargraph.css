@@ -1,0 +1,95 @@
+body{
+    padding: 0;
+    margin:0;
+}
+
+.container{
+    margin: auto;
+    margin-top: 150px;
+    width: 420px;
+    height: 420px;
+    background: linear-gradient(to right bottom, rgba(179, 109, 109, 0.7), rgba(241, 51, 51, 0.3));
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.1);
+    z-index: 1;
+}
+
+.container .box{
+    position: relative;
+}
+
+.container .box li{
+    position: absolute;
+    top: 3.5em;
+    width: 18px;
+    height: 250px;
+    background: linear-gradient(to right top, #1d463e, #062f35);
+    list-style: none;
+    
+}
+
+.container .box li:nth-child(1){
+    left: 5em;
+}
+
+.container .box li:nth-child(2){
+    left: 9em;
+}
+
+.container .box li:nth-child(3){
+    left: 13em;
+}
+
+.container .box li .text{
+    position: absolute;
+    bottom: -2em;
+    left: -0.7em;
+    background: transparent;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.container .box li .bar{
+    position: absolute;
+    bottom: 0;
+    background: #000;
+    width: 100%;
+}
+
+.container .box li .bar1{
+    animation: bar1 0.8s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bar1{
+    from{height: 0;}
+    to{height: 30%;}
+}
+
+.container .box li .bar2{
+    animation: bar2 0.8s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bar2{
+    from{height: 0;}
+    to{height: 40%;}
+}
+
+.container .box li .bar3{
+    animation: bar3 0.8s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bar3{
+    from{height: 0;}
+    to{height: 80%;}
+}
+
+.container h1{
+    position: absolute;
+    left: 36em;
+    top:485px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
